@@ -4,59 +4,83 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html ng-app="app">
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/ionic.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/blink.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <div class="bar bar-header has-tabs-top bar-positive">
-            <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
-                <div class="tabs">
-                  <a class="tab-item active" href="#">
-                    <i class="icon ion-home"></i>
-                    Test
-                  </a>
-                  <a class="tab-item" href="#">
-                    <i class="icon ion-star"></i>
-                    Favorites
-                  </a>
-                  <a class="tab-item" href="#">
-                    <i class="icon ion-gear-a"></i>
-                    Settings
-                  </a>
-                </div>
-              </div>
-            
-            
+    <body ng-controller="controller">
+        <div id="example-content" class="ionic-body active-preview">
+            <div class="bar bar-header has-tabs-top bar-energized" id="header">
+                
+            <div class="h1 title"><img class="logoHeader" src="image/logo.png" alt=""/></div>
+            <button class="button button-icon icon ion-bag" ng-click="showPopup()"></button>
+           
         </div>
-    
-  <div class="tabs-striped tabs-color-assertive">
-      
-    <div class="tabs">
-      <a class="tab-item active" href="#">
-        <i class="icon ion-clock"></i>
-        Diligencias
-      </a>
-      <a class="tab-item" href="#">
-        <i class="icon ion-fork"></i>
-        Domicilios
-      </a>
-      <a class="tab-item" href="#">
-        <i class="icon ion-gear-a"></i>
-        Licores
-      </a>
-    <a class="tab-item" href="#">
-       <i class="icon ion-briefcase"></i>
-        Servicios
-      </a>
-    </div>
-  </div>
-        <script src="js/angular/angular.min.js" type="text/javascript"></script>
-        <script src="js/ionic.min.js" type="text/javascript"></script>
-        <script src="js/ionic-angular.min.js" type="text/javascript"></script>
         
+            <div id="body">
+                
+            </div>
+        <!--<ion-view>
+            <ion-content class="content has-header">
+                <h1>Hola</h1>
+            </ion-content>
+        </ion-view>
+        <ion-view title="Mi primera app en ionic!">
+            <ion-content id="body" >
+                
+
+            </ion-content>
+        </ion-view>-->
+                
+        
+
+            
+        <div class="tabs-striped tabs-color-energized" id="footer">
+
+          <div class="tabs tabs-icon-top">
+              <a class="tab-item" id="tabDiligencias" href="#">
+              <i class="icon ion-clock"></i>
+              Diligencias
+            </a>
+            <a class="tab-item" href="#" id="tabDomicilios">
+              <i class="icon ion-android-restaurant"></i>
+              Domicilios
+            </a>
+            <a class="tab-item" id="tabLicores" href="#">
+              <i class="icon ion-gear-a"></i>
+              Licores
+            </a>
+          <a class="tab-item" id="tabServicios" href="#">
+             <i class="icon ion-briefcase"></i>
+              Servicios
+            </a>
+          </div>
+        </div>
+        </div>
+        
+        <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="js/ionic.min.js" type="text/javascript"></script>
+        <script src="js/angular/angular.min.js" type="text/javascript"></script>
+        <script src="js/ionic-angular.min.js" type="text/javascript"></script>
+        <script src="js/angular-ui/angular-ui-router.min.js" type="text/javascript"></script>
+        <script src="js/ionic.bundle.min.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        <script src="js/app-angular.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                
+                page.configBody();
+                
+                page.diligencias();
+                
+                
+            });
+                
+            
+        </script>
     </body>
 </html>
