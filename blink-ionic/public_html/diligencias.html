@@ -1,23 +1,30 @@
-<div id="mapaDiligencias" style="height: inherit"></div>
-<div class="divMap" ng-controller="controller">
-    <h4 style="text-align: center">Escribe Aquí Lo Que Quieres Que Hagamos Por Ti</h4>
-    <div class="list">
-            <label class="item item-input">
-                <textarea placeholder="Descripción" rows="5"></textarea>
-            </label>
+<div id="mapaDiligencias">
+    
+    
         
+        <div class="divMap">
+        <h4 style="text-align: center">Escribe Aquí Lo Que Quieres Que Hagamos Por Ti</h4>
+        <div class="list">
+                <label class="item item-input">
+                    <textarea placeholder="Descripción" rows="5"></textarea>
+                </label>
+
+        </div>
+        <button class="button button-block button-balanced" ng-click="showPopup()">
+            Pedir Servicio
+        </button>
+
+
     </div>
-    <button class="button button-block button-balanced" ng-click="showPopup()">
-        Pedir Servicio
-    </button>
-
-
+    
+    
 </div>
+
 <script>
     
     $(document).ready(function(){
         page.configMapIni();
-        loadScript();
+        //loadScript();
     });
     
     function initialize() {

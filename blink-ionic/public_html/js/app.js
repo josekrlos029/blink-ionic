@@ -180,7 +180,7 @@ var page = {
         
         $("#mapaDiligencias").height($("#body").height());
         
-        $(".divMap").css("margin-top", ( "-" + ($("#mapaDiligencias").height() - 60)) +  "px" );
+        //$(".divMap").css("margin-top", ( "-" + ($("#mapaDiligencias").height() - 60)) +  "px" );
         
         
     }
