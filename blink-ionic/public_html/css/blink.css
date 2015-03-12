@@ -21,7 +21,7 @@ and open the template in the editor.
 
 .divMap{
     padding: 10px;
-    position: relative;
+    position: absolute;
     width: 300px;
     margin: 0 auto;
     background-color: #f8f8f8;

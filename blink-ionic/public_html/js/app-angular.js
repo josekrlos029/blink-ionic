@@ -1,7 +1,8 @@
-angular.module("app", ["ionic"])
+var angu = angular.module("app", ["ionic"])
         .controller("controller", function ($scope, $ionicPopup, $timeout) {
             
            $scope.showPopup = function() {
+                
             $scope.data = {};
 
             // An elaborate, custom popup

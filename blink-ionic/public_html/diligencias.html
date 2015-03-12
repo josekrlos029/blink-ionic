@@ -1,5 +1,5 @@
 <div id="mapaDiligencias" style="height: inherit"></div>
-<div class="divMap">
+<div class="divMap" ng-controller="controller">
     <h4 style="text-align: center">Escribe Aquí Lo Que Quieres Que Hagamos Por Ti</h4>
     <div class="list">
             <label class="item item-input">
@@ -7,15 +7,12 @@
             </label>
         
     </div>
-    
     <button class="button button-block button-balanced" ng-click="showPopup()">
         Pedir Servicio
     </button>
 
 
 </div>
-<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBAibBz2Z0H3jFKhC9zguoL9jNU4fwlQGw&sensor=true&libraries=geometry"></script>
-<script src="js/gmaps.js" type="text/javascript"></script>-->
 <script>
     
     $(document).ready(function(){
@@ -41,3 +38,5 @@ function loadScript() {
 }
     
 </script>
+<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBAibBz2Z0H3jFKhC9zguoL9jNU4fwlQGw&sensor=true&libraries=geometry"></script>
+<script src="js/gmaps.js" type="text/javascript"></script>-->
